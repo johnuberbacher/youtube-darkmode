@@ -1,0 +1,31 @@
+/* Override */
+body.darkMode {
+	--yt-swatch-primary: hsl(0, 0%, 5%);
+	--yt-main-app-background: hsl(0, 0%, 5%);
+	--yt-main-app-background-tmp: hsl(0, 0%, 5%);
+	--yt-guide-background: hsl(0, 0%, 8%);
+	/* Names in Comments, Main Text Color */
+	--yt-primary-color: hsl(0, 2%, 91%);
+	--yt-primary-text-color: hsl(0, 2%, 91%);
+	--yt-channel-owner: hsl(0, 2%, 91%);
+	/* Border */
+	--yt-border-color: hsl(207, 2%, 44%);
+	/* Comments */
+	--ytd-comment-text-color: hsla(0, 0%, 80%, 0.6);
+	/* Recent Videos Author */
+	--yt-metadata-color: hsla(0, 0%, 80%, 0.6);
+	/* Date Published */
+	--ytd-video-publish-date-color: hsla(0, 0%, 80%, 0.6);
+	/* Comment Timestamp */
+	--yt-endpoint-color: hsla(0, 0%, 80%, 0.6);
+	--yt-endpoint-visited-color: hsla(0, 0%, 80%, 0.6); 
+	--yt-button-color: hsla(0, 0%, 80%, 0.6); 
+	--yt-button-text-color:  hsla(0, 0%, 80%, 0.6);
+	/* Logo Adjustment */
+	--yt-swatch-text: hsla(0, 0%, 80%, 0.6);
+}
+body.darkMode #logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {
+	fill: var(--yt-swatch-logo-override, #fff);
+}
+body.darkMode ytd-button-renderer.force-icon-button a.ytd-button-renderer, body.darkMode a[is="yt-endpoint"].ytd-toggle-button-renderer { color: hsla(0, 0%, 80%, 0.6); }
+body.darkMode a[is="yt-endpoint"].ytd-toggle-button-renderer:hover { color: hsla(0, 0%, 80%, 0.6); }
