@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Dark",
+  "version": "0.1.7",
+  "description": "Youtube Dark",
+  "icons": { 
+    "16":"images/icon-32.png", 
+    "48":"images/icon-64.png", 
+    "128":"images/icon-128.png" },
+  "browser_action": { 
+  	"default_icon": {
+      "16":"images/icon-32.png", 
+      "48":"images/icon-64.png", 
+      "128":"images/icon-128.png" 
+	},
+    "default_title": "Youtube Dark",
+    "default_popup": "popup.html"
+  }, 
+  "permissions": [ "https://www.youtube.com/*", "storage" ],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "css": ["style.css"],
+    "js": ["popup.js","darkMode.js","background.js"],
+    "run_at": "document_idle"
+  }]
+
+}
